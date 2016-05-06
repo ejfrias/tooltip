@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A lightweight, easy, straight-forward and very simple tooltip made with jQuery">
+	<meta name="author" content="EJ Frias">
+
+	<title>Tooltip by EJ Frias</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.0.8/gridlex.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700">
+	<link rel="stylesheet" href="../assets/tooltip.min.css">
+	<link rel="stylesheet" href="css/demo.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="main">
+		<div class="grid">
+			<div class="col align-center">
+				<h1>tooltip</h1>
+				<p>A lightweight, easy, straight-forward and very simple tooltip made with jQuery</p>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="grid">
+				<div class="col">
+					<h3 class="no-margin-top">Basic usage</h3>
+					<p><span data-tooltip="Hello world">Hover me</span></p>
+					<button class="button" data-tooltip="You can apply tooltip to any element">A button with a tooltip</button>
+				</div>
+			</div>
+			<pre><code class="html">&lt;span data-tooltip=&quot;Hello world&quot;&gt;Hover me&lt;/span&gt;;
+&lt;button class=&quot;button&quot; data-tooltip=&quot;You can apply tooltip to any element&quot;&gt;A button with a tooltip&lt;/button&gt;</code></pre>
+
+			<div class="grid">
+				<div class="col">
+					<h3>Placement</h3>
+					<p><span data-tooltip="Tooltip at the top">Default tooltip will show on top of the element</span></p>
+					<p><span data-tooltip="On your right" data-placement="right">Tooltip at the right</span></p>
+					<p><span data-tooltip="I'm here at the bottom" data-placement="bottom">Tooltip at the bottom</span></p>
+					<p><span data-tooltip="On your left" data-placement="left">Tooltip at the left</span></p>
+				</div>
+			</div>
+			<pre><code class="html">&lt;span data-tooltip=&quot;Tooltip at the top&quot;&gt;Default tooltip will show on top of the element&lt;/span&gt;
+&lt;span data-tooltip=&quot;On your right&quot; data-placement=&quot;right&quot;&gt;Tooltip at the right&lt;/span&gt;
+&lt;span data-tooltip=&quot;I'm here at the bottom&quot; data-placement=&quot;bottom&quot;&gt;Tooltip at the bottom&lt;/span&gt;
+&lt;span data-tooltip=&quot;On your left&quot; data-placement=&quot;left&quot;&gt;Tooltip at the left&lt;/span&gt;</code></pre>
+
+			<div class="grid">
+				<div class="col">
+					<h3>Distance</h3>
+					<p><span data-tooltip="In a land far far away..." data-distance="20">Tooltip will show 20px away from me</span></p>
+				</div>
+			</div>
+			<pre><code class="html">&lt;span data-tooltip=&quot;Hello world&quot; data-distance=&quot;20&quot;&gt;Tooltip will show 20px away from me&lt;/span&gt;</code></pre>
+
+			<div class="grid">
+				<div class="col">			
+					<h3>Custom styling via css class</h3>
+					<p><span data-tooltip="Yay, I can have a style!" data-class="primary">Tooltip with primary class</span></p>
+					<p><span data-tooltip="Success!" data-class="success">A success tooltip</span></p>
+					<p><span data-tooltip="Info here..." data-class="info">An info tooltip</span></p>
+					<p><span data-tooltip="Warning! Warning!" data-class="warning">A warning tooltip</span></p>
+					<p><span data-tooltip="Oooooooops..." data-class="error">An error tooltip</span></p>
+				</div>
+			</div>
+			<pre><code class="html">&lt;span data-tooltip=&quot;Yay, I can have a style!&quot; data-class=&quot;primary&quot;&gt;Tooltip with primary class&lt;/span&gt;
+&lt;span data-tooltip=&quot;Success!&quot; data-class=&quot;success&quot;&gt;A success tooltip&lt;/span&gt;
+&lt;span data-tooltip=&quot;Info here...&quot; data-class=&quot;info&quot;&gt;An info tooltip&lt;/span&gt;
+&lt;span data-tooltip=&quot;Warning! Warning!&quot; data-class=&quot;warning&quot;&gt;A warning tooltip&lt;/span&gt;
+&lt;span data-tooltip=&quot;Oooooooops...&quot; data-class=&quot;error&quot;&gt;An error tooltip&lt;/span&gt;</code></pre>
+
+			<div class="grid">
+				<div class="col">
+					<h3>Custom text source</h3>
+					<div class="source hidden">Seamlessly iterate best-of-breed expertise before interactive meta-services. Interactively drive accurate technology via plug-and-play networks. Uniquely develop extensive scenarios through holistic bandwidth. Credibly expedite viral niches.</div>
+					<p><span data-tooltip=".source">Other source</span></p>
+					<p><span data-tooltip=".source">Same source as the top element</span></p>
+				</div>
+			</div>
+			<pre><code class="html">&lt;span data-tooltip=&quot;.source&quot;&gt;Other source&lt;/span&gt;
+&lt;span data-tooltip=&quot;.source&quot;&gt;Same source as the top element&lt;/span&gt;
+&lt;div class=&quot;source hidden&quot;&gt;Seamlessly iterate best-of-breed expertise before interactive meta-services. Interactively drive accurate technology via plug-and-play networks. Uniquely develop extensive scenarios through holistic bandwidth. Credibly expedite viral niches.&lt;/div&gt;</code></pre>
+		</div>
+		
+		<div class="grid">
+			<div class="col align-center">
+				<p>&nbsp;</p>
+				<div class="made-by">
+					Made by <a href="http://ejfrias.com" target="_blank">EJ Frias</a><br />
+					View source code on <a href="https://github.com/ejfrias/tooltip" target="_blank">GitHub</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+	<script src="../assets/tooltip.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
+</body>
+</html>
