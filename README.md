@@ -7,13 +7,13 @@ A lightweight, easy, straight-forward and very simple tooltip made with jQuery
 
 
 ### Requirement
-jQuery 1.x is required to make this work
+jQuery 1.x
 
 
 ### How to use
-Just add a link to the css file in your `<head>`:
+Just add a link to the css file in your `<head>` tag:
 ```
-<link rel="stylesheet" href="/path/to/tooltip.css" />
+<link rel="stylesheet" href="/path/to/tooltip.css">
 ```
 
 Then, before your closing `</body>` tag add:
@@ -25,8 +25,6 @@ Then, before your closing `</body>` tag add:
 ```
 <p data-tooltip="Hello world!">Hover me</p>
 ```
-
-Look below for more options.
 
 
 ### Options
