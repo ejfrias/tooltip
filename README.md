@@ -3,7 +3,7 @@ A lightweight, easy, straight-forward and very simple tooltip made with jQuery
 
 
 ### Demo
-[https://ejfrias.github.io/tooltip](https://ejfrias.github.io/tooltip)
+[http://ejfrias.com/playground/tooltip](http://ejfrias.com/playground/tooltip)
 
 
 ### Requirement
