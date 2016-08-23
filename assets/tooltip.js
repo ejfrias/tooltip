@@ -118,6 +118,7 @@ $(function(){
 			var $tooltip = $('.tooltip');
 			
 			$tooltip.hide().empty().html('<span class="tail"></span>').removeClass().addClass('tooltip').hide();
+			$tooltip.find('.tail').css({ left: '50%' });
 		}
 		
 	};
